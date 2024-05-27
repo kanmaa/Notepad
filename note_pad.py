@@ -8,3 +8,9 @@ if command == "1":
     target.write(file_content)
     target.close()
 
+if command == "2":
+    file_name= input("Enter file name")
+    target = open(file_name, 'r')
+    file_content = target.read()
+    print(file_content)
+    target.close()
